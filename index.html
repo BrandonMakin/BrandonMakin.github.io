@@ -1,36 +1,46 @@
 <!DOCTYPE html>
-<style>
-  html {
-    background: url(background.png) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
-
-  body {
-      margin:0%;
-  }
-  #topMargin {
-    width: 100%;
-    height: 100px;
-  }
-
-  #topDivider {
-    offset:0%;
-
-    float:top;
-    width: 100%;
-    height: 45px;
-    background-color: #a0a0a0;
-  }
-</style>
-
 <html>
-  <body>
-    <div id = "topMargin"></div>
-    <div id = "topDivider"></div>
-    <h1>Hello World</h1>
-    <p>I'm hosted with GitHub Pages.</p>
-  </body>
+<head>
+	<meta charset="UTF-8">
+	<link rel="icon" type="image/png" href="img/favicon.png">
+	<title>Hi! I'm Brandon</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link href="styles.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+	<h1>
+		Hi! I'm Brandon
+		<br>
+		<div class="avatar"></div>
+	</h1>
+	<h2>I like to make things...</h2>
+
+	<div class="project">
+		I do game jams!
+	</div>
+	<br>
+	<div class="project">
+		I am an artist
+	</div>
+	<br>
+	<div class="project">
+		I love to play the drums
+	</div>
+	<br>
+
+	<div class="footer">
+		<span id="email"></span>
+		<script>
+			var emailSpan = document.getElementById('email');
+			var email = 'bmi'+'cmak'+'@'+'gma'+'il.c'+'om';
+			emailSpan.innerHTML = "<a href=\"mailto:"+email+"\">"+email+"</a>"
+		</script>
+	</div>
+
+	<div class="cloud"></div>
+	<div class="cloud"></div>
+	<div class="cloud"></div>
+
+</body>
 </html>

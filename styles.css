@@ -1,0 +1,92 @@
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+@import url(https://fonts.googleapis.com/css?family=Indie+Flower);
+@import url(https://fonts.googleapis.com/css?family=Architects+Daughter);
+
+body {
+	font-family:'Architects Daughter', sans-serif;
+	margin: 0 auto;
+	text-align: center;
+	background: rgba(26, 188, 156, 0.2);
+	position: relative;
+	line-height: 1.4;
+}
+
+h1 {
+	font-family: 'Pacifico', serif;
+	font-size: 50px;
+	margin-top: 100px;
+	z-index: 10;
+	position: relative;
+	padding: 0 15px;
+	text-align: center;
+	margin-bottom: 0;
+}
+
+h2 {
+	font-size: 30px;
+	font-family:'Indie Flower', sans-serif;
+	z-index: 10;
+	position: relative;
+	padding: 0 15px;
+	margin-top: 0;
+	margin-bottom: 150px;
+}
+
+.avatar {
+	background-image: url('img/avatar.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 200px;
+	width: 200px;
+	display: inline-block;
+}
+
+.project {
+	margin: 30px 15px;
+	border-radius: 20px;
+	background: rgba(236, 240, 241, 0.5);
+	border: 1px solid #ccc;
+	padding: 20px;
+	width: 600px;
+	max-width: calc(90% - 45px);
+	z-index: 10;
+	position: relative;
+	display: inline-block;
+}
+
+.cloud {
+	height: 100px;
+	width: 250px;
+	position: fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	z-index: 1;
+}
+
+.cloud:nth-child(3n-2) {
+	top: 0;
+	left: 0;
+	background-image: url('img/cloud_1.png');
+}
+
+.cloud:nth-child(3n-1) {
+	top: 45%;
+	right: 5%;
+	background-image: url('img/cloud_2.png');
+}
+
+.cloud:nth-child(3n) {
+	top: 80%;
+	left: 10%;
+	background-image: url('img/cloud_3.png');
+}
+
+.footer {
+	margin-top: 30px;
+	margin-bottom: 40px;
+	font-size: 20px;
+	position: relative;
+	z-index: 10;
+}
