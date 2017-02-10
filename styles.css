@@ -57,11 +57,9 @@ h2 {
 	z-index: 10;
 	position: relative;
 	display: inline-block;
-	cursor: pointer;
 }
-
-#programming_project {
-	cursor: default;
+.clickable {
+	cursor: pointer;
 }
 
 h3 {
