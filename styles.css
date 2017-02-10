@@ -76,6 +76,14 @@ h3 {
 	max-width: 90%;
 }
 
+.tools {
+	display: inline-block;
+	margin: 10px;
+	position: relative;
+	width: 200px;
+	border-radius: 5px;
+}
+
 /***** Background Clouds *****/
 
 .cloud {
