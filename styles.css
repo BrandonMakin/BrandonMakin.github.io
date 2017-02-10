@@ -11,6 +11,8 @@ body {
 	line-height: 1.4;
 }
 
+/***** Title *****/
+
 h1 {
 	font-family: 'Pacifico', serif;
 	font-size: 50px;
@@ -42,6 +44,8 @@ h2 {
 	display: inline-block;
 }
 
+/***** Project elements *****/
+
 .project {
 	margin: 30px 15px;
 	border-radius: 20px;
@@ -54,6 +58,37 @@ h2 {
 	position: relative;
 	display: inline-block;
 }
+.clickable {
+	cursor: pointer;
+}
+
+h3 {
+	font-size: 25px;
+	font-weight: normal;
+}
+
+.img_s {
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	background: #fff;
+	margin: 20px 0;
+	width: 350px;
+	max-width: 90%;
+}
+
+.tools_h {
+	padding-top: 20px;
+}
+
+.tools {
+	display: inline-block;
+	margin: 0 20px 30px 20px;
+	position: relative;
+	width: 120px;
+	border-radius: 5px;
+}
+
+/***** Background Clouds *****/
 
 .cloud {
 	height: 100px;
@@ -63,25 +98,46 @@ h2 {
 	background-position: center;
 	background-size: cover;
 	z-index: 1;
+	opacity: 0;
+	-webkit-transition: all 1s;
+  transition: all 1s;
 }
 
-.cloud:nth-child(3n-2) {
+#cloud1 {
 	top: 0;
 	left: 0;
 	background-image: url('img/cloud_1.png');
+	opacity: 1;
 }
 
-.cloud:nth-child(3n-1) {
+#cloud2 {
 	top: 45%;
 	right: 5%;
 	background-image: url('img/cloud_2.png');
+	opacity: 1;
 }
 
-.cloud:nth-child(3n) {
+#cloud3 {
 	top: 80%;
 	left: 10%;
 	background-image: url('img/cloud_3.png');
+	opacity: 1;
 }
+
+@media screen and (min-width: 800px) {
+	h2 {
+		margin-bottom: 60px;
+	}
+
+	#cloud4 {
+		top: 30%;
+		left: 20%;
+		background-image: url('img/cloud_3.png');
+		opacity: 1;
+	}
+}
+
+/***** Footer *****/
 
 .footer {
 	margin-top: 30px;
