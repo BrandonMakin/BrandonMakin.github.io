@@ -76,6 +76,10 @@ h3 {
 	max-width: 90%;
 }
 
+.tools_h {
+	padding-top: 20px;
+}
+
 .tools {
 	display: inline-block;
 	margin: 0 20px 30px 20px;
