@@ -113,6 +113,10 @@ h3 {
 }
 
 @media screen and (min-width: 800px) {
+	h2 {
+		margin-bottom: 60px;
+	}
+
 	#cloud4 {
 		top: 30%;
 		left: 20%;
