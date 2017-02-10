@@ -57,6 +57,7 @@ h2 {
 	z-index: 10;
 	position: relative;
 	display: inline-block;
+	cursor: pointer;
 }
 
 .img_s {
