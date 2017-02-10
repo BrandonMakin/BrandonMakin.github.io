@@ -74,19 +74,19 @@ h2 {
 	z-index: 1;
 }
 
-.cloud:nth-child(3n-2) {
+#cloud1 {
 	top: 0;
 	left: 0;
 	background-image: url('img/cloud_1.png');
 }
 
-.cloud:nth-child(3n-1) {
+#cloud2 {
 	top: 45%;
 	right: 5%;
 	background-image: url('img/cloud_2.png');
 }
 
-.cloud:nth-child(3n) {
+#cloud3 {
 	top: 80%;
 	left: 10%;
 	background-image: url('img/cloud_3.png');
