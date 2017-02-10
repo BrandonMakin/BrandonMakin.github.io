@@ -55,6 +55,13 @@ h2 {
 	display: inline-block;
 }
 
+.img_s {
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	background: #fff;
+	margin: 30px 0;
+}
+
 .cloud {
 	height: 100px;
 	width: 250px;
