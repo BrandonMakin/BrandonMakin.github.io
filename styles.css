@@ -78,24 +78,39 @@ h2 {
 	background-position: center;
 	background-size: cover;
 	z-index: 1;
+	opacity: 0;
+	-webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 #cloud1 {
 	top: 0;
 	left: 0;
 	background-image: url('img/cloud_1.png');
+	opacity: 1;
 }
 
 #cloud2 {
 	top: 45%;
 	right: 5%;
 	background-image: url('img/cloud_2.png');
+	opacity: 1;
 }
 
 #cloud3 {
 	top: 80%;
 	left: 10%;
 	background-image: url('img/cloud_3.png');
+	opacity: 1;
+}
+
+@media screen and (min-width: 800px) {
+	#cloud4 {
+		top: 30%;
+		left: 20%;
+		background-image: url('img/cloud_3.png');
+		opacity: 1;
+	}
 }
 
 /***** Footer *****/
