@@ -5,13 +5,28 @@
     <title>Art by Brandon Makin</title>
     <link rel="stylesheet" href="art.css">
     <script type="text/javascript" src="js/paper-full.min.js"></script>
+    <script>
+      var disabled = true;
+      var displaySlideshow = function(mode) {
+        if (mode == "disable" || !disabled) {
+          document.getElementById("slideshow").style.display = "none";
+          document.getElementById("canvas").style.cursor = "default";
+          disabled = true;
+        } else {
+          document.getElementById("slideshow").style.display = "block";
+          document.getElementById("canvas").style.cursor = "pointer";
+          disabled = false;
+        }
+      }
+
+    </script>
     <script type="text/paperscript" canvas="canvas">
       //declare variables:
       //...
 
         //List artwork:
 
-        var art = ['art/001.jpg',"art/002.jpg","art/003.jpg","art/004.jpg","art/005.jpg","art/006.jpg","art/007.jpg","art/008.jpg","art/009.jpg","art/010.jpg","art/011.jpg"]
+        var art = ['art/001.jpg',"art/002.jpg","art/003.jpg","art/004.jpg","art/005.jpg","art/006.jpg","art/008.jpg","art/010.jpg","art/011.jpg"]
         var artUnused = art.slice(); //which art is left undisplayed.
         var artworkCount = art.length;
 
@@ -206,14 +221,14 @@
       var dist = function(x1, y1, x2, y2) {
         return Math.sqrt( (x2-x1)*(x2-x1) + (y2-y1)*(y2-y1) )
       }
-
     </script>
   </head>
   <body>
     <div id="showSlides">
-      <a href=""><p> CLICK </p></a>
+      <p onclick="displaySlideshow('toggle');"> CLICK ME </p>
     </div>
-    <iframe class="slideshow" scrolling=""src="slideshow.html#firstSlide"></iframe>
-    <canvas id="canvas" resize stats></canvas>
+    <iframe id="slideshow" scrolling=""src="slideshow.html#firstSlide"></iframe>
+      <canvas id="canvas" resize stats onclick="displaySlideshow('disable');"></canvas>
+
   </body>
 </html>

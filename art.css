@@ -11,7 +11,7 @@ canvas[resize] {
     height: 100%;
 }
 
-.slideshow{
+#slideshow{
   display: none;
   width: 70%;
   height: 76%;
@@ -21,16 +21,15 @@ canvas[resize] {
 }
 
 #showSlides {
+  cursor: pointer;
   font-size: 200%;
   font-weight: bold;
   font-family: sans-serif;
   position:fixed;
-  margin-bottom:-40px;
-  margin-left:-2px;
+  margin-bottom:-30px;
+  margin-left:6px;
   bottom:0%;
-  left:0%
-}
-
-a{
-  color:black;
+  left:0%;
+  color: black;
+  text-shadow: -1px -1px 2px white;
 }
