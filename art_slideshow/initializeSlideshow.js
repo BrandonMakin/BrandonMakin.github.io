@@ -5,13 +5,17 @@ var images = [
   "bear.jpg",
   "dj.jpg",
   "trees.jpg",
-  "cliffs.jpg",
+  "monster_clock.jpg",
+  "blanket_fort_boy.jpg",
+  "dragon.jpg",
+  "visual_storytelling_1.png",
+  "visual_storytelling_2.png",
   "laramie.jpg",
+  "cliffs.jpg",
   "bison.jpg",
   "young_me.jpg",
   "diver.jpg",
   "bill_gates.jpg",
-  "holocaust.jpg",
   "singer.jpg"
 ]
 
