@@ -1,6 +1,6 @@
 console.log("This is a test, didn't you know?")
 
-var imageDirectory = "../art/";
+var imageDirectory = "../img/art/";
 var images = [
   "bear.jpg",
   "dj.jpg",
