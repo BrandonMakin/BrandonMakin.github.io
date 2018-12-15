@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang = 'en'>
+  <head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.5/css/swiper.min.css">
+
+    <style>
+
+    html, body {
+      position: relative;
+      height: 100%;
+    }
+      body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color:#000;
+      margin: 0;
+      padding: 0;
+    }
+    .swiper-container {
+      width: 100%;
+      height: auto;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+    }
+    .swiper-container .swiper-slide {
+      height: 300px;
+      line-height: 300px;
+    }
+    .swiper-container .swiper-slide:nth-child(2n) {
+      height: 500px;
+      line-height: 500px;
+    }
+    </style>
+  </head>
+  <body>
+
+    <!-- Slideshow: -->
+    <div class = "swiper-container">
+      <div class = "swiper-wrapper">
+        <!-- Slides: -->
+        <div class="swiper-slide">
+          <img src="../art/001.jpg">
+        </div>
+        <div class="swiper-slide">
+          <img src="../art/002.jpg">
+        </div>
+        <div class="swiper-slide">
+          <img src="../art/003.jpg">
+        </div>
+        <div class="swiper-slide">
+          <img src="../art/004.jpg">
+        </div>
+        <div class="swiper-slide">
+          <img src="../art/005.jpg">
+        </div>
+        <!-- <div class = "swiper-slide">Slide 2</div> -->
+      </div>
+
+      <!-- Navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.5/js/swiper.min.js"></script>
+    <script src="initializeSwiperSlideshow.js"></script>
+  </body>
+</html>
