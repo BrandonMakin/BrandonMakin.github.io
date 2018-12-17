@@ -64,7 +64,7 @@ h2 {
 
 .grid {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto auto 33vw;
 	grid-gap: 2vw;
 }
 
@@ -80,6 +80,19 @@ h3 {
 	margin: 20px 0;
 	width: 350px;
 	max-width: 90%;
+}
+
+.sketch {
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	background: #333;
+	padding: 20px;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-left: 17%;
+	width: 350px;
+	max-width: 90%;
+	/* margin-left: 0px */
 }
 
 .tools_h {
