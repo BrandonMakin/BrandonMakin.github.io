@@ -64,7 +64,7 @@ h2 {
 
 .grid {
   display: grid;
-  grid-template-columns: auto auto 33vw;
+  grid-template-columns: auto auto auto;
 	grid-gap: 2vw;
 }
 
@@ -86,8 +86,7 @@ h3 {
 	padding: 20px;
 	margin: auto;
 	margin-top: 20px;
-	width: 350px;
-	max-width: 90%;
+	/* width: 350px; */
 }
 
 canvas {

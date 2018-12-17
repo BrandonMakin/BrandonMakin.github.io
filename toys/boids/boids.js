@@ -14,15 +14,20 @@ var sketch = function(p)
   p.boidRadius = 8
 
   p.setup = function() {
-    p.createCanvas(300, 240);
-    // p.createCanvas(p.windowWidth, p.windowHeight);
+    // p.myCanvas = p.createCanvas(300, 240);
+    p.myCanvas = p.createCanvas(p.windowWidth*.2, p.windowHeight*.4);
     for (var i = 0; i < p.boidCount; ++i) {
 
       p.boids.push(new p.boid())
     }
-    boidsInOneBatch = p.boidCount/p.batchCount
     p.noStroke()
     p.background(0, 120, 125)
+
+  }
+
+  p.windowResized = function() {
+    console.log(p.myCanvas)
+    p.createCanvas(p.windowWidth*.2, p.windowHeight*.4);
   }
 
   p.mouseMoved = function()
