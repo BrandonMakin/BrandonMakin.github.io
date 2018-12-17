@@ -22,7 +22,7 @@ var sketch = function(p)
     }
     boidsInOneBatch = p.boidCount/p.batchCount
     p.noStroke()
-    p.background(100, 110, 110)
+    p.background(0, 120, 125)
   }
 
   p.mouseMoved = function()
@@ -34,9 +34,9 @@ var sketch = function(p)
     p.pfollowMouse = p.followMouse
     p.followMouse = p.checkForMouse && p.mouseX < p.width - p.buffer && p.mouseX > p.buffer && p.mouseY < p.height - p.buffer && p.mouseY > p.buffer
     if (!p.followMouse) {
-      p.background(100, 100, 100, 40); // make background slightly transparent to create motion blur effect
+      p.background(0, 90, 120, 40); // make background slightly transparent to create motion blur effect
     } else {
-      p.background(100, 100, 100, 20); // make background more transparent when the boids are following the mouse
+      p.background(0, 90, 120, 20); // make background more transparent when the boids are following the mouse
     }
     for (var i = 0; i < p.boidCount ; ++i) {
       if (!p.followMouse) {
