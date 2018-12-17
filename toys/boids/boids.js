@@ -15,7 +15,7 @@ var sketch = function(p)
 
   p.setup = function() {
     // p.myCanvas = p.createCanvas(300, 240);
-    p.myCanvas = p.createCanvas(p.windowWidth*.2, p.windowHeight*.4);
+    p.myCanvas = p.createCanvas(p.windowWidth*.2, p.windowHeight*.45);
     for (var i = 0; i < p.boidCount; ++i) {
 
       p.boids.push(new p.boid())
