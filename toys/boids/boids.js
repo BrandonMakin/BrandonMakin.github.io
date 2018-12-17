@@ -14,7 +14,7 @@ var sketch = function(p)
   p.boidRadius = 8
 
   p.setup = function() {
-    p.createCanvas(300, 230);
+    p.createCanvas(300, 240);
     // p.createCanvas(p.windowWidth, p.windowHeight);
     for (var i = 0; i < p.boidCount; ++i) {
 
