@@ -158,6 +158,27 @@ canvas {
 /***** Footer *****/
 
 .footer {
+	display:flex
+	border-radius: 20px;
+	background: rgba(236, 240, 241, 0.95);
+	border: 1px solid #ccc;
+	/* font-size: 20px; */
+	/* position: fixed; */
+
+	z-index: 15;
+}
+
+.footericon {
+	margin:5px;
+	margin-top: 7px;
+	margin-bottom: 5px;
+	height: 28px;
+}
+
+
+/***** Email Footer *****/
+
+.emailfooter {
 	margin-top: 30px;
 	margin-bottom: 40px;
 	font-size: 20px;
