@@ -1,9 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Pacifico);
+@import url(https://fonts.googleapis.com/css?family=Quicksand);
 /* @import url(https://fonts.googleapis.com/css?family=Indie+Flower); */
 /* @import url(https://fonts.googleapis.com/css?family=Architects+Daughter); */
 
 body {
-	font-family: Verdana, Geneva, sans-serif;
+	font-family: 'Quicksand', Verdana, sans-serif;
 	margin: 0 auto;
 	text-align: center;
 	background: rgba(26, 188, 156, 0.2);
@@ -26,7 +27,7 @@ h1 {
 
 h2 {
 	font-size: 30px;
-	font-family: Verdana, Geneva, sans-serif;
+	font-family: 'Quicksand', Verdana, sans-serif;
 	z-index: 10;
 	position: relative;
 	padding: 0 15px;
@@ -64,7 +65,7 @@ h2 {
 
 .grid {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 32vw auto 32vw;
 	grid-gap: 2vw;
 }
 
