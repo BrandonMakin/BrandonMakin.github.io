@@ -26,7 +26,6 @@ var sketch = function(p)
   }
 
   p.windowResized = function() {
-    console.log(p.myCanvas)
     p.createCanvas(p.windowWidth*.2, p.windowHeight*.4);
   }
 
