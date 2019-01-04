@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta property="og:title" content="Brandon Makin's Games" />
+	<meta property="og:image" content="http://brandonmakin.com/img/avatar.png">
+	<meta property="og:description" content="Cute, fun, squishy games by Brandon Michael Makin." />
+	<link rel="icon" type="image/png" href="../img/favicon.png">
+	<title>Games! - Brandon Makin</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link href="../styles.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+	<h2>I like to make games.</h2>
+
+	<div class="grid">
+
+		<div class="project clickable" onclick="window.open('https://wanderer-studio.itch.io/shooter-shooter')">
+			<h3>Shooter Shooter</h3>
+			<img class="img_s" src="../img/games/shotshot.png" alt="Yosemite Bear by Brandon Makin" />
+		</div>
+
+		<div class="project clickable" onclick="window.open('https://wanderer-studio.itch.io/rainbow-country')">
+	    <h3>Rainbow Country</h3>
+      <img class="img_s" src="../img/games/rainbow_country.png" alt="Yosemite Bear by Brandon Makin" />
+		</div>
+
+    <div class="project clickable" onclick="window.open('../img/games/electrocuties_trailer.mp4')">
+      <h3>Electrocuties</h3>
+      <img class="img_s" src="https://static.wixstatic.com/media/03d5f6_6cdb7d5fc6e5453cb888b7e82c1d1cca~mv2.png/v1/fill/w_1190,h_665,al_c,q_85,usm_0.66_1.00_0.01/03d5f6_6cdb7d5fc6e5453cb888b7e82c1d1cca~mv2.png" alt="Row Boat Rumble" />
+    </div>
+
+		<div class="project clickable" onclick="window.open('https://wanderer-studio.itch.io/row-boat-rumble')">
+	    <h3>Row Boat Rumble</h3>
+			<img class="img_s" src="../img/games/row_boat_rumble.png" alt="Row Boat Rumble" />
+		</div>
+
+	</div> <!-- End of grid -->
+
+	<div class="emailfooter">
+		<p>Come say howdy!</p>
+		<span id="email"></span>
+		<script>
+			var emailSpan = document.getElementById('email');
+			var email = 'howd'+'y@'+'brand'+'onma'+'kin.c'+'om';
+			emailSpan.innerHTML = "<a href=\"mailto:"+email+"\">"+email+"</a>"
+		</script>
+	</div>
+
+	<div class="footer">
+		<div>Check me out.</div>
+		<!-- <img class="headericon" src="img/header/mail.png" alt="Email me"/> -->
+		<a href="resume.html"> <img class="footericon" src="../img/header/resume.png" alt="My resume"/></a>
+		<img class="footericon clickable" onclick="window.open('https://www.linkedin.com/in/brandon-makin-3a471287')" src="../img/header/linked-in.png" alt="My LinkedIn"/>
+		<img class="footericon clickable" onclick="window.open('https://github.com/brandonmakin')" src="../img/header/github.png" alt="My GitHub"/>
+	</div>
+
+
+	<div class="cloud" id="cloud1"></div>
+	<div class="cloud" id="cloud2"></div>
+	<div class="cloud" id="cloud3"></div>
+	<div class="cloud" id="cloud4"></div>
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.js"></script>
+	<script src="toys/boids/boids.js"></script>
+</body>
+</html>
