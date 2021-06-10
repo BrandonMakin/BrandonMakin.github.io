@@ -17,7 +17,7 @@ body {
   margin: 0;
   width: 100%;
   height: 100%;
-  background-image: url("mockup.png");
+/*   background-image: url("mockup.png"); */
   background-size: cover;
   opacity: 10%;
   background-color: black;
@@ -100,9 +100,9 @@ a:hover {
 }
 
 .news-index-list > dt {
-  font-size: 16pt;
+  font-size: 15pt;
   display: list-item;
-  width: 84%;
+  width: 79%;
   white-space: nowrap;
   overflow: hidden;
   box-sizing: content-box;
@@ -115,7 +115,7 @@ a:hover {
 
 .news-index-list > dd {
   font-size: 10pt;
-  margin-top: -20pt;
+  margin-top: -17.5pt;
   float: right;
   margin-right: 5pt;
   overflow: hidden;
