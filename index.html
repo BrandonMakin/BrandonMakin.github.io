@@ -1,82 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<meta property="og:title" content="Brandon Makin's Fun Little Website" />
-	<meta property="og:image" content="https://brandonmakin.com/img/avatar.png">
-	<meta property="og:description" content="The cute, fun, squishy, bouncy, silky, sneaky, colorful little portfolio website of Brandon Michael Makin." />
-	<link rel="icon" type="image/png" href="img/favicon.png">
-	<title>Hi! I'm Brandon</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<link href="styles.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+<div class="full-container">
+  <!-- header -->
+  <div class="header">
+    <img src="header.png", width="100%" alt="Header">
+  </div>
+  <!-- folio line -->
+  <div class="folio">
+    <h6 class="folio-small-item"><i>Volume MMXXI</i></h6>
+    <h6 class="folio-date"> <i>CALIFORNIA, WEDNESDAY, MAY 26, 2021</i></h6>
+    <h6 class="folio-small-item"><i>10 CENTS</i></h6>
+  </div>
 
-	<h1>
-		Hi! I'm Brandon
-		<br>
-		<div class="avatar"></div>
-	</h1>
-	<h2>I like to make things.</h2>
+  <!-- container for sidebar and articles -->
+  <div class="sidebar-and-articles-container">
+    <div class="sidebar">
+      <div class="news-index">
+        News Index
+        <ul>
+          <li>
+            <a href="#">Front Page</a>
+            .........1
+          </li>
+          <li>
+            <a href="#">About Me</a>
+            ..........14
+          </li>
+          <li>
+            <a href="#">Games</a>
+            ...........9, 11
+          </li>
+          <li>
+            <a href="#">Code</a>
+            .............40-43
+          </li>
+          <li>
+            <a href="#">Other Projects</a>
+            ..21
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="articles">
+      <div class="big article">
+        Article 1
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+        Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volut
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+        Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volut
+      </div>
+      <div class="small article">
+        Article 2
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+        Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum
+      </div>
+    </div>
+  </div>
+</div>
 
-	<div class="grid">
-
-		<div class="project clickable" onclick="window.open('art_slideshow/index.html')">
-			<h3>I Do Art</h3>
-			<img class="img_s" src="img/art/bear.jpg" alt="Yosemite Bear by Brandon Makin" />
-		</div>
-
-		<div class="project clickable" onclick="window.open('games/index.html')">
-	    <h3>I Design Games</h3>
-			<img class="img_s" src="img/games/row_boat_rumble.png" alt="Row Boat Rumble" />
-		</div>
-
-		<div class="project clickable" onclick="window.open('https://github.com/brandonmakin')">
-	    <h3>And I Code!</h3>
-			<!-- <div class="tools_h"> -->
-				<!-- <img class="tools" src="img/lang/java.png" alt="Java" />
-				<img class="tools" src="img/lang/css3html5.png" alt="CSS/HTML" />
-				<img class="tools" src="img/lang/unity.png" alt="Unity" />
-				<img class="tools" src="img/lang/dotnet.png" alt=".NET" />
-				<img class="tools" src="img/lang/csharp.png" alt="C#" />
-				<img class="tools" src="img/lang/godot.png" alt="Godot" />
-				<img class="tools" src="img/lang/autohotkey.png" alt="AutoHotkey" /> -->
-			<!-- </div> -->
-			<!-- <img class="img_s" src="img/drums/playing.gif" alt="More Cowbell!" /> -->
-			<div class="sketch"> <!-- boids_container -->
-				<div id="boids"></div>
-			</div>
-		</div>
-
-	</div> <!-- End of grid -->
-
-	<div class="emailfooter">
-		<p>Come say howdy!</p>
-		<span id="email"></span>
-		<script>
-			var emailSpan = document.getElementById('email');
-			var email = 'howd'+'y@'+'brand'+'onma'+'kin.c'+'om';
-			emailSpan.innerHTML = "<a href=\"mailto:"+email+"\">"+email+"</a>"
-		</script>
-	</div>
-
-	<div class="footer">
-		<div>Check me out.</div>
-		<!-- <img class="headericon" src="img/header/mail.png" alt="Email me"/> -->
-		<a href="resume.html"> <img class="footericon" src="img/header/resume.png" alt="My resume"/></a>
-		<img class="footericon clickable" onclick="window.open('https://www.linkedin.com/in/brandon-makin-3a471287')" src="img/header/linked-in.png" alt="My LinkedIn"/>
-		<img class="footericon clickable" onclick="window.open('https://github.com/brandonmakin')" src="img/header/github.png" alt="My GitHub"/>
-	</div>
-
-
-	<div class="cloud" id="cloud1"></div>
-	<div class="cloud" id="cloud2"></div>
-	<div class="cloud" id="cloud3"></div>
-	<div class="cloud" id="cloud4"></div>
-
-
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.js"></script>
-	<script src="toys/boids/boids.js"></script>
 </body>
 </html>
