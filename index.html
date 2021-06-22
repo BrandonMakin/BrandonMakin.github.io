@@ -1,82 +1,167 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta property="og:title" content="Brandon Makin's Fun Little Website" />
-	<meta property="og:image" content="https://brandonmakin.com/img/avatar.png">
-	<meta property="og:description" content="The cute, fun, squishy, bouncy, silky, sneaky, colorful little portfolio website of Brandon Michael Makin." />
-	<link rel="icon" type="image/png" href="img/favicon.png">
-	<title>Hi! I'm Brandon</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<link href="styles.css" rel="stylesheet" type="text/css" />
-</head>
-<body>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Brandon Makin</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body class="w3-light-grey">
+
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+    <div class="w3-container">
+      <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+        <i class="fa fa-remove"></i>
+      </a>
+      <img src="img/avatar.jpg" style="width:45%;" class="w3-round"><br><br>
+      <h4><b>BRANDON MAKIN</b></h4>
+      <p class="w3-text-grey">Software Engineer</p>
+    </div>
+    <div class="w3-bar-block">
+      <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-home fa-fw w3-margin-right"></i>HOME</a>
+      <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a>
+      <a href="#projects" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-lightbulb fa-fw w3-margin-right"></i>MY PROJECTS</a>
+      <!-- <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a> -->
+    </div>
+    <!-- <div class="w3-panel w3-large">
+      <i class="fab fa-facebook-official w3-hover-opacity"></i>
+      <i class="fab fa-instagram w3-hover-opacity"></i>
+      <i class="fab fa-snapchat w3-hover-opacity"></i>
+      <i class="fab fa-pinterest-p w3-hover-opacity"></i>
+      <i class="fab fa-twitter w3-hover-opacity"></i>
+      <i class="fab fa-linkedin w3-hover-opacity"></i>
+      <i class="fab fa-github w3-hover-opacity"></i>
+    </div> -->
+    </nav>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+    <!-- Page content -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header id="portfolio">
+    <!-- <a href="#"> -->
+      <img src="img/avatar.jpg" style="width:55px;" class="w3-circle w3-right w3-margin w3-hide-large">
+    <!-- </a> -->
+    <span class="w3-button w3-hide-large w3-xxxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars" ></i></span>
+
+    <!-- Auto Slideshow -->
+    <div class="mySlides w3-display-container w3-center">
+      <img src="https://www.w3schools.com/w3images/la.jpg" style="width:100%">
+      <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+        <h3>Los Angeles</h3>
+        <p><b>We had the best time playing at Venice Beach!</b></p>
+      </div>
+    </div>
+    <div class="mySlides w3-display-container w3-center">
+      <img src="https://www.w3schools.com/w3images/ny.jpg" style="width:100%">
+      <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+        <h3>New York</h3>
+        <p><b>The atmosphere in New York is lorem ipsum.</b></p>
+      </div>
+    </div>
+    <div class="mySlides w3-display-container w3-center">
+      <img src="https://www.w3schools.com/w3images/chicago.jpg" style="width:100%">
+      <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+        <h3>Chicago</h3>
+        <p><b>Thank you, Chicago - A night we won't forget.</b></p>
+      </div>
+    </div>
+  </header>
+
+    <div class="w3-container w3-padding-large" id="about" style="margin-bottom:32px">
+        <h4><b>Hi, I'm Brandon!</b></h4>
+        <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+        <hr>
+    </div>
+
+    <!-- Projects -->
+    <header id="projects">
+      <a href="#"><img src="https://www.w3schools.com/w3images/avatar_g2.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+      <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+      <div class="w3-container">
+      <h1><b>My Projects</b></h1>
+      <div class="w3-section w3-bottombar w3-padding-16">
+        <span class="w3-margin-right">Filter:</span>
+        <button class="w3-button w3-black">ALL</button>
+        <button class="w3-button w3-white"><i class="fa fa-gamepad w3-margin-right"></i>Games</button>
+        <button class="w3-button w3-white w3-hide-small"><i class="fa fa-code w3-margin-right"></i>Code</button>
+        <button class="w3-button w3-white w3-hide-small"><i class="fa fa-palette w3-margin-right"></i>Art</button>
+        <button class="w3-button w3-white w3-hide-small"><i class="fa fa-frog w3-margin-right"></i>Other</button>
+      </div>
+      </div>
+    </header>
+
+    <!-- Projects Photo Grid - Row 1 -->
+    <div class="w3-row-padding">
+      <div class="w3-third w3-container w3-margin-bottom">
+        <img src="https://www.w3schools.com/w3images/mountains.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+        <div class="w3-container w3-white">
+          <p><b>Lorem Ipsum</b></p>
+          <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+        </div>
+      </div>
+      <div class="w3-third w3-container w3-margin-bottom">
+        <img src="https://www.w3schools.com/w3images/lights.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+        <div class="w3-container w3-white">
+          <p><b>Lorem Ipsum</b></p>
+          <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+        </div>
+      </div>
+      <div class="w3-third w3-container">
+        <img src="https://www.w3schools.com/w3images/nature.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+        <div class="w3-container w3-white">
+          <p><b>Lorem Ipsum</b></p>
+          <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Projects Photo Grid - Row 2 -->
+    <div class="w3-row-padding">
+      <div class="w3-third w3-container w3-margin-bottom">
+        <img src="https://www.w3schools.com/w3images/p1.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+        <div class="w3-container w3-white">
+          <p><b>Lorem Ipsum</b></p>
+          <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+        </div>
+      </div>
+      <div class="w3-third w3-container w3-margin-bottom">
+        <img src="https://www.w3schools.com/w3images/p2.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+        <div class="w3-container w3-white">
+          <p><b>Lorem Ipsum</b></p>
+          <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+        </div>
+      </div>
+      <div class="w3-third w3-container">
+        <img src="https://www.w3schools.com/w3images/p3.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+        <div class="w3-container w3-white">
+          <p><b>Lorem Ipsum</b></p>
+          <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pagination -->
+    <div class="w3-center w3-padding-32">
+      <div class="w3-bar">
+        <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+        <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+      </div>
+    </div>
 
 
-	<h1>
-		Hi! I'm Brandon
-		<br>
-		<div class="avatar"></div>
-	</h1>
-	<h2>I like to make things.</h2>
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-32 w3-black">
+    </footer>
 
-	<div class="grid">
-
-		<div class="project clickable" onclick="window.open('art_slideshow/index.html')">
-			<h3>I Do Art</h3>
-			<img class="img_s" src="img/art/bear.jpg" alt="Yosemite Bear by Brandon Makin" />
-		</div>
-
-		<div class="project clickable" onclick="window.open('games/index.html')">
-	    <h3>I Design Games</h3>
-			<img class="img_s" src="img/games/row_boat_rumble.png" alt="Row Boat Rumble" />
-		</div>
-
-		<div class="project clickable" onclick="window.open('https://github.com/brandonmakin')">
-	    <h3>And I Code!</h3>
-			<!-- <div class="tools_h"> -->
-				<!-- <img class="tools" src="img/lang/java.png" alt="Java" />
-				<img class="tools" src="img/lang/css3html5.png" alt="CSS/HTML" />
-				<img class="tools" src="img/lang/unity.png" alt="Unity" />
-				<img class="tools" src="img/lang/dotnet.png" alt=".NET" />
-				<img class="tools" src="img/lang/csharp.png" alt="C#" />
-				<img class="tools" src="img/lang/godot.png" alt="Godot" />
-				<img class="tools" src="img/lang/autohotkey.png" alt="AutoHotkey" /> -->
-			<!-- </div> -->
-			<!-- <img class="img_s" src="img/drums/playing.gif" alt="More Cowbell!" /> -->
-			<div class="sketch"> <!-- boids_container -->
-				<div id="boids"></div>
-			</div>
-		</div>
-
-	</div> <!-- End of grid -->
-
-	<div class="emailfooter">
-		<p>Come say howdy!</p>
-		<span id="email"></span>
-		<script>
-			var emailSpan = document.getElementById('email');
-			var email = 'howd'+'y@'+'brand'+'onma'+'kin.c'+'om';
-			emailSpan.innerHTML = "<a href=\"mailto:"+email+"\">"+email+"</a>"
-		</script>
-	</div>
-
-	<div class="footer">
-		<div>Check me out.</div>
-		<!-- <img class="headericon" src="img/header/mail.png" alt="Email me"/> -->
-		<a href="resume.html"> <img class="footericon" src="img/header/resume.png" alt="My resume"/></a>
-		<img class="footericon clickable" onclick="window.open('https://www.linkedin.com/in/brandon-makin-3a471287')" src="img/header/linked-in.png" alt="My LinkedIn"/>
-		<img class="footericon clickable" onclick="window.open('https://github.com/brandonmakin')" src="img/header/github.png" alt="My GitHub"/>
-	</div>
-
-
-	<div class="cloud" id="cloud1"></div>
-	<div class="cloud" id="cloud2"></div>
-	<div class="cloud" id="cloud3"></div>
-	<div class="cloud" id="cloud4"></div>
-
-
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.js"></script>
-	<script src="toys/boids/boids.js"></script>
-</body>
+    <script src="script.js" charset="utf-8"></script>
+  </body>
 </html>
