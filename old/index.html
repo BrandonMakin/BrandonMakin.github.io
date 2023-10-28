@@ -1,36 +1,82 @@
 <!DOCTYPE html>
-<style>
-  html {
-    background: url(background.png) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta property="og:title" content="Brandon Makin's Fun Little Website" />
+	<meta property="og:image" content="https://brandonmakin.com/img/avatar.png">
+	<meta property="og:description" content="The cute, fun, squishy, bouncy, silky, sneaky, colorful little portfolio website of Brandon Michael Makin." />
+	<link rel="icon" type="image/png" href="img/favicon.png">
+	<title>Hi! I'm Brandon</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link href="styles.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
 
-  body {
-      margin:0%;
-  }
-  #topMargin {
-    width: 100%;
-    height: 100px;
-  }
 
-  #topDivider {
-    offset:0%;
+	<h1>
+		Hi! I'm Brandon
+		<br>
+		<div class="avatar"></div>
+	</h1>
+	<h2>I like to make things.</h2>
 
-    float:top;
-    width: 100%;
-    height: 45px;
-    background-color: #a0a0a0;
-  }
-</style>
+	<div class="grid">
 
-<html>
-  <body>
-    <div id = "topMargin"></div>
-    <div id = "topDivider"></div>
-    <h1>Brandon Makin's website</h1>
-    <p>Sorry, we're having some trouble. We'll be back up soon.</p>
-  </body>
+		<div class="project clickable" onclick="window.open('art_slideshow/index.html')">
+			<h3>I Do Art</h3>
+			<img class="img_s" src="img/art/bear.jpg" alt="Yosemite Bear by Brandon Makin" />
+		</div>
+
+		<div class="project clickable" onclick="window.open('games/index.html')">
+	    <h3>I Design Games</h3>
+			<img class="img_s" src="img/games/row_boat_rumble.png" alt="Row Boat Rumble" />
+		</div>
+
+		<div class="project clickable" onclick="window.open('https://github.com/brandonmakin')">
+	    <h3>And I Code!</h3>
+			<!-- <div class="tools_h"> -->
+				<!-- <img class="tools" src="img/lang/java.png" alt="Java" />
+				<img class="tools" src="img/lang/css3html5.png" alt="CSS/HTML" />
+				<img class="tools" src="img/lang/unity.png" alt="Unity" />
+				<img class="tools" src="img/lang/dotnet.png" alt=".NET" />
+				<img class="tools" src="img/lang/csharp.png" alt="C#" />
+				<img class="tools" src="img/lang/godot.png" alt="Godot" />
+				<img class="tools" src="img/lang/autohotkey.png" alt="AutoHotkey" /> -->
+			<!-- </div> -->
+			<!-- <img class="img_s" src="img/drums/playing.gif" alt="More Cowbell!" /> -->
+			<div class="sketch"> <!-- boids_container -->
+				<div id="boids"></div>
+			</div>
+		</div>
+
+	</div> <!-- End of grid -->
+
+	<div class="emailfooter">
+		<p>Come say howdy!</p>
+		<span id="email"></span>
+		<script>
+			var emailSpan = document.getElementById('email');
+			var email = 'howd'+'y@'+'brand'+'onma'+'kin.c'+'om';
+			emailSpan.innerHTML = "<a href=\"mailto:"+email+"\">"+email+"</a>"
+		</script>
+	</div>
+
+	<div class="footer">
+		<div>Check me out.</div>
+		<!-- <img class="headericon" src="img/header/mail.png" alt="Email me"/> -->
+		<a href="resume.html"> <img class="footericon" src="img/header/resume.png" alt="My resume"/></a>
+		<img class="footericon clickable" onclick="window.open('https://www.linkedin.com/in/brandon-makin-3a471287')" src="img/header/linked-in.png" alt="My LinkedIn"/>
+		<img class="footericon clickable" onclick="window.open('https://github.com/brandonmakin')" src="img/header/github.png" alt="My GitHub"/>
+	</div>
+
+
+	<div class="cloud" id="cloud1"></div>
+	<div class="cloud" id="cloud2"></div>
+	<div class="cloud" id="cloud3"></div>
+	<div class="cloud" id="cloud4"></div>
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.js"></script>
+	<script src="toys/boids/boids.js"></script>
+</body>
 </html>

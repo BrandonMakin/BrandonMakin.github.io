@@ -1,82 +1,185 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta property="og:title" content="Brandon Makin's Fun Little Website" />
-	<meta property="og:image" content="https://brandonmakin.com/img/avatar.png">
-	<meta property="og:description" content="The cute, fun, squishy, bouncy, silky, sneaky, colorful little portfolio website of Brandon Michael Makin." />
-	<link rel="icon" type="image/png" href="img/favicon.png">
-	<title>Hi! I'm Brandon</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<link href="styles.css" rel="stylesheet" type="text/css" />
-</head>
-<body>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Brandon Makin</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body class="w3-white">
+
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-collapse w3-light-grey w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+    <div class="w3-container">
+      <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+        <i class="fa fa-remove"></i>
+      </a>
+      <img src="img/avatar.jpg" style="width:45%;" class="w3-round"><br><br>
+      <h4><b>BRANDON MAKIN</b></h4>
+      <p class="w3-text-grey">Software Engineer</p>
+    </div>
+    <!-- <div class="w3-bar-block">
+      <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-home fa-fw w3-margin-right"></i>HOME</a>
+      <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a>
+      <a href="#projects" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-lightbulb fa-fw w3-margin-right"></i>PORTFOLIO</a>
+    </div> -->
+    <div class="w3-panel w3-large">
+      <a href="https://www.tiktok.com/@oneshotfinch">You can find my newest art here on my TikTok! <img src="img/tiktok.svg" width="16px"></p>
+    </div>
+    <!-- <div class="w3-panel w3-large">
+      <i class="fab fa-facebook-official w3-hover-opacity"></i>
+      <i class="fab fa-instagram w3-hover-opacity"></i>
+      <i class="fab fa-snapchat w3-hover-opacity"></i>
+      <i class="fab fa-pinterest-p w3-hover-opacity"></i>
+      <i class="fab fa-twitter w3-hover-opacity"></i>
+      <i class="fab fa-linkedin w3-hover-opacity"></i>
+      <i class="fab fa-github w3-hover-opacity"></i>
+    </div> -->
+    </nav>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+    <!-- Page content -->
+<div class="w3-main" style="margin-left:300px">
+
+    <!-- <div class="w3-container w3-padding-large" id="about" style="margin-bottom:32px">
+        <h4><b>Hi, I'm Brandon!</b></h4>
+        <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+        <hr>
+    </div> -->
+
+    <!-- Projects -->
+    <header id="projects">
+      <div class="w3-container">
+      <h3><b>PORTFOLIO</b></h3>
+      <!-- <div class="filters w3-section w3-bottombar w3-padding-16">
+        <span class="w3-margin-right">Filter:</span>
+        <button onclick="enableAllTags()" id="filter-all" class="w3-button w3-black">ALL</button>
+        <button onclick="toggleTag(event, 'games')" class="w3-ripple w3-button w3-light-grey"><i class="fa fa-gamepad w3-margin-right"></i>Games</button>
+        <button onclick="toggleTag(event, 'code')" class="w3-ripple w3-button w3-light-grey w3-hide-small"><i class="fa fa-code w3-margin-right"></i>Code</button>
+        <button onclick="toggleTag(event, 'art')" class="w3-ripple w3-button w3-light-grey w3-hide-small"><i class="fa fa-palette w3-margin-right"></i>Art</button>
+        <button onclick="toggleTag(event, 'other')" class="w3-ripple w3-button w3-light-grey w3-hide-small"><i class="fa fa-frog w3-margin-right"></i>Other</button>
+      </div> -->
+      </div>
+    </header>
+
+    <!-- Projects Photo Grid -->
+    <div id="photo-grid" class="w3-row-padding">
+
+      <div class="w3-quarter w3-container w3-margin-bottom">
+        <a href="https://www.tiktok.com/@oneshotfinch/video/7286033758707453230">
+          <img src="img/projects/03.png" style="width:100%" class="w3-hover-opacity">
+        </a>
+        <div class="w3-container w3-light-grey">
+          <p><b>Inktober Days 2-3: Rats</b></p>
+          <p> I am drawing song lyrics daily for October and posting it to TikTok. Click to see my process!</p>
+        </div>
+      </div>
+      <div class="w3-quarter w3-container w3-margin-bottom">
+        <a href="https://www.tiktok.com/@oneshotfinch/video/7286362239676812587">
+          <img src="img/projects/04.png" style="width:100%" class="w3-hover-opacity">
+        </a>
+        <div class="w3-container w3-light-grey">
+          <p><b>Inktober Day 4: Pluto</b></p>
+          <p> I am drawing song lyrics daily for October and posting it to TikTok. Click to see my process!</p>
+        </div>
+      </div>
+      <div class="w3-quarter w3-container w3-margin-bottom">
+        <a href="https://www.tiktok.com/@oneshotfinch/video/7291226927933721898">
+          <img src="img/projects/17.png" style="width:100%" class="w3-hover-opacity">
+        </a>
+        <div class="w3-container w3-light-grey">
+          <p><b>Inktober Day 17: Mad Hatter</b></p>
+          <p> I am drawing song lyrics daily for October and posting it to TikTok. Click to see my process!</p>
+        </div>
+      </div>
+      <div class="w3-quarter w3-container w3-margin-bottom">
+        <a href="https://www.tiktok.com/@oneshotfinch/video/7294555657250852138">
+          <img src="img/projects/26.png" style="width:100%" class="w3-hover-opacity">
+        </a>
+        <div class="w3-container w3-light-grey">
+          <p><b>Inktober Day 26: In The Woods Somewhere</b></p>
+          <p> I am drawing song lyrics daily for October and posting it to TikTok. Click to see my process!</p>
+        </div>
+      </div>
+
+      <div class="w3-quarter w3-container w3-margin-bottom">
+        <a href="https://www.tiktok.com/@oneshotfinch/video/7293833541383671086">
+          <img src="img/projects/24.png" style="width:100%" class="w3-hover-opacity">
+        </a>
+        <div class="w3-container w3-light-grey">
+          <p><b>Inktober Day 24: Freaks</b></p>
+          <p> I am drawing song lyrics daily for October and posting it to TikTok. Click to see my process!</p>
+        </div>
+      </div>
+
+      <div class="w3-quarter w3-container w3-margin-bottom">
+        <a href="https://www.tiktok.com/@oneshotfinch/video/7294180482508508462">
+          <img src="img/projects/25.png" style="width:100%" class="w3-hover-opacity">
+        </a>
+        <div class="w3-container w3-light-grey">
+          <p><b>Inktober Day 25: Lemon Boy</b></p>
+          <p> I am drawing song lyrics daily for October and posting it to TikTok. Click to see my process!</p>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container w3-margin-bottom">
+        <img src="img/projects/pokemon.png" style="width:100%" class="w3-hover-opacity">
+        <div class="w3-container w3-light-grey">
+          <p><b>Pokémon Fan Art (Piloswine and Swinubs)</b></p>
+          <p> A personal drawing of some of my favorite Pokémon roaming their native habitat!</p>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container w3-margin-bottom">
+        <video autoplay loop muted style="width:100%" class="w3-hover-opacity">
+          <source src="img/projects/head.mp4" type="video/mp4">
+        </video>
+        <!-- <img src="img/projects/cafecadabra.png" style="width:100%" class="w3-hover-opacity"> -->
+        <div class="w3-container w3-light-grey">
+          <p><b>3D Head Sculpt</b></p>
+          <p> A simple sketch of a head in 3D</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Pagination -->
+    <!-- <div class="w3-center w3-padding-32">
+      <div class="w3-bar">
+        <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+        <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+      </div>
+    </div> -->
 
 
-	<h1>
-		Hi! I'm Brandon
-		<br>
-		<div class="avatar"></div>
-	</h1>
-	<h2>I like to make things.</h2>
+    <!-- Footer -->
+    <!-- <footer class="w3-container w3-padding-32 w3-black">
+    </footer> -->
 
-	<div class="grid">
+    <!-- project preview card template -->
+    <template id="project-card-template">
+      <div class="w3-hide w3-third w3-display-container w3-margin-bottom">
+        <img src="" alt="Cafecadabra" style="width:100%" class="w3-hover-opacity">
+        <div class="w3-display-topright w3-container w3-text-white w3-padding-32 w3-hide-small">
+          <p class="project-tags" style="margin-top:-20px;">
+            <i class="project-icon fa fa-gamepad"></i>
+            <i class="project-icon fa fa-code"></i>
+            <i class="project-icon fa fa-palette"></i>
+            <i class="project-icon fa fa-frog"></i>
+          </p>
+        </div>
+        <div class="w3-container w3-light-grey">
+          <p class="card-name"><b>Lorem Ipsum</b></p>
+          <p class="card-desc">Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+        </div>
+      </div>
+    </template>
 
-		<div class="project clickable" onclick="window.open('art_slideshow/index.html')">
-			<h3>I Do Art</h3>
-			<img class="img_s" src="img/art/bear.jpg" alt="Yosemite Bear by Brandon Makin" />
-		</div>
-
-		<div class="project clickable" onclick="window.open('games/index.html')">
-	    <h3>I Design Games</h3>
-			<img class="img_s" src="img/games/row_boat_rumble.png" alt="Row Boat Rumble" />
-		</div>
-
-		<div class="project clickable" onclick="window.open('https://github.com/brandonmakin')">
-	    <h3>And I Code!</h3>
-			<!-- <div class="tools_h"> -->
-				<!-- <img class="tools" src="img/lang/java.png" alt="Java" />
-				<img class="tools" src="img/lang/css3html5.png" alt="CSS/HTML" />
-				<img class="tools" src="img/lang/unity.png" alt="Unity" />
-				<img class="tools" src="img/lang/dotnet.png" alt=".NET" />
-				<img class="tools" src="img/lang/csharp.png" alt="C#" />
-				<img class="tools" src="img/lang/godot.png" alt="Godot" />
-				<img class="tools" src="img/lang/autohotkey.png" alt="AutoHotkey" /> -->
-			<!-- </div> -->
-			<!-- <img class="img_s" src="img/drums/playing.gif" alt="More Cowbell!" /> -->
-			<div class="sketch"> <!-- boids_container -->
-				<div id="boids"></div>
-			</div>
-		</div>
-
-	</div> <!-- End of grid -->
-
-	<div class="emailfooter">
-		<p>Come say howdy!</p>
-		<span id="email"></span>
-		<script>
-			var emailSpan = document.getElementById('email');
-			var email = 'howd'+'y@'+'brand'+'onma'+'kin.c'+'om';
-			emailSpan.innerHTML = "<a href=\"mailto:"+email+"\">"+email+"</a>"
-		</script>
-	</div>
-
-	<div class="footer">
-		<div>Check me out.</div>
-		<!-- <img class="headericon" src="img/header/mail.png" alt="Email me"/> -->
-		<a href="resume.html"> <img class="footericon" src="img/header/resume.png" alt="My resume"/></a>
-		<img class="footericon clickable" onclick="window.open('https://www.linkedin.com/in/brandon-makin-3a471287')" src="img/header/linked-in.png" alt="My LinkedIn"/>
-		<img class="footericon clickable" onclick="window.open('https://github.com/brandonmakin')" src="img/header/github.png" alt="My GitHub"/>
-	</div>
-
-
-	<div class="cloud" id="cloud1"></div>
-	<div class="cloud" id="cloud2"></div>
-	<div class="cloud" id="cloud3"></div>
-	<div class="cloud" id="cloud4"></div>
-
-
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.js"></script>
-	<script src="toys/boids/boids.js"></script>
-</body>
+  </body>
 </html>
