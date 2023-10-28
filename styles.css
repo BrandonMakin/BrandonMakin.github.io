@@ -11,6 +11,10 @@ body,h1,h2,h3,h4,h5,h6 {
   font-family: "Raleway", sans-serif
 }
 
+button > * {
+  pointer-events: none;
+}
+
 .mySlides > img {
   width:100%;
   /* height:90vh; */
@@ -19,4 +23,13 @@ body,h1,h2,h3,h4,h5,h6 {
 
 .mySlides > div {
   bottom: -40px;
+}
+
+.project-icon {
+  color:white;
+  background-color:black;
+  border-radius:100%;
+  padding: .3em;
+  /* padding-left:.5em; */
+  /* padding-right:.5em; */
 }
