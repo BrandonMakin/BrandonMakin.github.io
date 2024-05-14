@@ -10,62 +10,103 @@
 
     <!-- Sidebar/menu -->
     <nav class="w3-sidebar w3-collapse w3-light-grey w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
-    <div class="w3-container">
-      <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
-        <i class="fa fa-remove"></i>
-      </a>
-      <img src="img/avatar.jpg" style="width:45%;" class="w3-round"><br><br>
-      <h4><b>BRANDON MAKIN</b></h4>
-      <p class="w3-text-grey">Software Engineer</p>
-    </div>
-    <!-- <div class="w3-bar-block">
-      <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-home fa-fw w3-margin-right"></i>HOME</a>
-      <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a>
-      <a href="#projects" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-lightbulb fa-fw w3-margin-right"></i>PORTFOLIO</a>
-    </div> -->
-    <div class="w3-panel w3-large">
-      <a href="https://www.tiktok.com/@oneshotfinch">You can find my newest art here on my TikTok! <img src="img/tiktok.svg" width="16px"></p>
-    </div>
-    <!-- <div class="w3-panel w3-large">
-      <i class="fab fa-facebook-official w3-hover-opacity"></i>
-      <i class="fab fa-instagram w3-hover-opacity"></i>
-      <i class="fab fa-snapchat w3-hover-opacity"></i>
-      <i class="fab fa-pinterest-p w3-hover-opacity"></i>
-      <i class="fab fa-twitter w3-hover-opacity"></i>
-      <i class="fab fa-linkedin w3-hover-opacity"></i>
-      <i class="fab fa-github w3-hover-opacity"></i>
-    </div> -->
+      <div class="w3-container">
+        <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+          <i class="fa fa-remove"></i>
+        </a>
+        <img src="img/avatar.jpg" style="width:45%;" class="w3-round"><br><br>
+        <h4><b>BRANDON MAKIN</b></h4>
+        <p class="w3-text-grey">Software Engineer</p>
+      </div>
+      <!-- <div class="w3-bar-block">
+        <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-home fa-fw w3-margin-right"></i>HOME</a>
+        <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a>
+        <a href="#projects" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-lightbulb fa-fw w3-margin-right"></i>PORTFOLIO</a>
+      </div> -->
+      <div class="w3-panel w3-large">
+        <a href="https://www.tiktok.com/@oneshotfinch">
+          You can find my newest art here on my TikTok! <img src="img/tiktok.svg" width="16px">
+        </a>
+      </div>
+      <!-- <div class="w3-panel w3-large">
+        <i class="fab fa-facebook-official w3-hover-opacity"></i>
+        <i class="fab fa-instagram w3-hover-opacity"></i>
+        <i class="fab fa-snapchat w3-hover-opacity"></i>
+        <i class="fab fa-pinterest-p w3-hover-opacity"></i>
+        <i class="fab fa-twitter w3-hover-opacity"></i>
+        <i class="fab fa-linkedin w3-hover-opacity"></i>
+        <i class="fab fa-github w3-hover-opacity"></i>
+      </div> -->
     </nav>
 
     <!-- Overlay effect when opening sidebar on small screens -->
     <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
     <!-- Page content -->
-<div class="w3-main" style="margin-left:300px">
-
-    <!-- <div class="w3-container w3-padding-large" id="about" style="margin-bottom:32px">
-        <h4><b>Hi, I'm Brandon!</b></h4>
-        <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-        <hr>
-    </div> -->
+    <div class="w3-main" style="margin-left:300px">
 
     <!-- Projects -->
     <header id="projects">
       <div class="w3-container">
       <h3><b>PORTFOLIO</b></h3>
-      <!-- <div class="filters w3-section w3-bottombar w3-padding-16">
+      <div class="filters w3-section w3-bottombar w3-padding-16">
         <span class="w3-margin-right">Filter:</span>
         <button onclick="enableAllTags()" id="filter-all" class="w3-button w3-black">ALL</button>
         <button onclick="toggleTag(event, 'games')" class="w3-ripple w3-button w3-light-grey"><i class="fa fa-gamepad w3-margin-right"></i>Games</button>
-        <button onclick="toggleTag(event, 'code')" class="w3-ripple w3-button w3-light-grey w3-hide-small"><i class="fa fa-code w3-margin-right"></i>Code</button>
+        <!-- <button onclick="toggleTag(event, 'code')" class="w3-ripple w3-button w3-light-grey w3-hide-small"><i class="fa fa-code w3-margin-right"></i>Code</button> -->
         <button onclick="toggleTag(event, 'art')" class="w3-ripple w3-button w3-light-grey w3-hide-small"><i class="fa fa-palette w3-margin-right"></i>Art</button>
-        <button onclick="toggleTag(event, 'other')" class="w3-ripple w3-button w3-light-grey w3-hide-small"><i class="fa fa-frog w3-margin-right"></i>Other</button>
-      </div> -->
+        <!-- <button onclick="toggleTag(event, 'other')" class="w3-ripple w3-button w3-light-grey w3-hide-small"><i class="fa fa-frog w3-margin-right"></i>Other</button> -->
+      </div>
       </div>
     </header>
 
     <!-- Projects Photo Grid -->
     <div id="photo-grid" class="w3-row-padding">
+
+      <div class="w3-half w3-container w3-margin-bottom">
+        <a href="https://www.youtube.com/embed/4CsqXagoKg4?ps=play&vq=large&rel=0&autohide=1&showinfo=0&autoplay=1&authuser=0">
+          <img src="https://d3o15ch5dvbj06.cloudfront.net/wp-content/uploads/2023/06/SolitaireMatch3-hero-v1-1.jpg" style="width:100%" class="w3-hover-opacity">
+        </a>
+        <div class="w3-container w3-light-grey">
+          <p><b>Solitaire Match 3</b></p>
+          <p>(Click to view the trailer.)</p>
+          <p>Solitaire Match 3 is MobilityWare's take on a Bejeweled-style gem matching game.</p>
+          <p>As a programmer on the team, I worked alongside artists, designers and fellow software developers to build and release this hit mobile game that now has over 100K downloads. </p>
+        </div>
+      </div>
+      <div class="w3-half w3-container w3-margin-bottom">
+        <a href="https://www.youtube.com/embed/_qZauZhHZYc">
+          <img src="img\projects\cafecadabra.png" style="width:100%" class="w3-hover-opacity">
+        </a>
+        <div class="w3-container w3-light-grey">
+          <p><b>Cafecadabra</b></p>
+          <p>(Click to view the trailer.)</p>
+          <p>.</p>
+          <p>.</p>
+          <p>.</p>
+        </div>
+      </div>
+      <div class="w3-half w3-container w3-margin-bottom">
+        <a href="https://d3o15ch5dvbj06.cloudfront.net/wp-content/uploads/2022/05/Golf_TutorialStyle_ua_30s_1920x1080_011922.mp4">
+          <img src="https://d3o15ch5dvbj06.cloudfront.net/wp-content/uploads/2022/05/76608c_1a5296df29ce4ac8a5de8f75e0882acc_mv2.webp" style="width:100%" class="w3-hover-opacity">
+        </a>
+        <div class="w3-container w3-light-grey">
+          <p><b>Golf Solitaire: Pro-Tour</b></p>
+          <p>(Click to view the trailer.)</p>
+        </div>
+      </div>
+      <div class="w3-half w3-container w3-margin-bottom">
+        <a href="https://godotengine.org/article/gsoc-2018-progress-report-1/#webrtc-support-for-multiplayer-games--brandon-makin">
+          <img src="https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2021/07/godot_fb_cover_img.jpg" style="width:100%" class="w3-hover-opacity">
+        </a>
+        <div class="w3-container w3-light-grey">
+          <p><b>Godot WebRTC Multiplayer</b></p>
+          <p>(Click to view my write-up on the official Godot blog.)</p>
+        </div>
+      </div>
+      
+      
+      
 
       <div class="w3-quarter w3-container w3-margin-bottom">
         <a href="https://www.tiktok.com/@oneshotfinch/video/7286033758707453230">

@@ -1,19 +1,3 @@
-// Automatic Slideshow - change image every 4 seconds
-carousel();
-
-function carousel(slideIndex) {
-  slideIndex = slideIndex || 0; // set slideIndex to 0 if it was null
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  slides[slideIndex-1].style.display = "block";
-  setTimeout(() => carousel(slideIndex), 4000);
-}
-
 // Used to toggle the menu on small screens when clicking on the menu button
 function toggleMenu() {
   var x = document.getElementById("navDemo");
@@ -36,7 +20,6 @@ window.onclick = function(event) {
 let cardTemplate = document.querySelector("#project-card-template");
 let cardGrid = document.querySelector("#photo-grid");
 let cards = []
-let a = cardTemplate.content.cloneNode(true);
 
 async function initializeGrid() {
   for (i = 0; i < 6; i++)
